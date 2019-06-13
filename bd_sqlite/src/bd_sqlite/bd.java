@@ -16,7 +16,7 @@ public class bd {
         */
         bd_sqlite = fileName;
 
-        String url = "jdbc:sqlite:/home/local/IESdanielcastelao/Cfigueirasvalverde/COD/NetBeansProjects/DATABASE_COD/" + bd_sqlite;
+        String url = "jdbc:sqlite:/home/local/carli/IESdanielcastelao/NetBeansProjects/COD/DATABASE_COD/" + bd_sqlite;
 
         try (Connection conn = DriverManager.getConnection(url)) {
 
@@ -46,7 +46,7 @@ public class bd {
 
         try {
 
-            String url = "jdbc:sqlite:/home/local/IESdanielcastelao/Cfigueirasvalverde/COD/NetBeansProjects/DATABASE_COD/" + baseCon;
+            String url = "jdbc:sqlite:/home/local/carli/IESdanielcastelao/NetBeansProjects/COD/DATABASE_COD/" + baseCon;
 
             conn = DriverManager.getConnection(url);
 
@@ -74,7 +74,7 @@ public class bd {
      */
     public static void crearTablaPer1(String nombre) {
 
-        String url = "jdbc:sqlite:/home/local/IESdanielcastelao/Cfigueirasvalverde/COD/NetBeansProjects/DATABASE_COD/" + baseCon;
+        String url = "jdbc:sqlite:/home/local/carli/IESdanielcastelao/NetBeansProjects/COD/DATABASE_COD/" + baseCon;
 
         String sql = "CREATE TABLE IF NOT EXISTS " + nombre + " (\n"
                 + "	dni text NOT NULL PRIMARY KEY,\n"
@@ -102,7 +102,7 @@ public class bd {
      */
     private Connection connect() {
 
-        String url = "jdbc:sqlite:/home/local/IESdanielcastelao/Cfigueirasvalverde/COD/NetBeansProjects/DATABASE_COD/" + baseCon;
+        String url = "jdbc:sqlite:/home/local/carli/IESdanielcastelao/NetBeansProjects/COD/DATABASE_COD/" + baseCon;
 
         Connection conn = null;
         try {
